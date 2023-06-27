@@ -1,4 +1,4 @@
-SG-S53-L0X(VL53L0X) from seengreat:www.seengreat.com
+SG-S53-L0X(VL53L0X)  from seengreat:www.seengreat.com
  =======================================
 # Instructions
 ## 1.1、Overview
@@ -26,7 +26,7 @@ The module with Raspberry Pi motherboard wiring is defined in the following tabl
 |SDA	|I2C data line	|SDA1|
 |SCL	|I2C clock line	|SCL1|
 |SHT	|shutdown control, can connects to IO pin	|NC|
-|GP1	|Interrupt output, can connects to IO pin	|NC|
+|GP1	|Interrupt output, can connects to IO pin	|NC|<br>
 Table2-1 Definition of SG-S53-L0X and Raspberry Pi pin<br>
 ## 2.1.2、Wiringpi Library Installation
 sudo apt-get install wiringpi<br>
@@ -99,7 +99,7 @@ The demo codes phenomenon in the Python version is similar to that in the C lang
 |SDA	|I2C data line	|SDA|
 |SCL	|I2C clock line	|SCL|
 |SHT	|shutdown control, can connects to IO pin	|NC|
-|GP1	|Interrupt output, can connects to IO pin	|NC|
+|GP1	|Interrupt output, can connects to IO pin	|NC|<br>
 Table2-2 Definition of SG-S53-L0X and Arduino <br>
 ### 2.2.2 Demo codes usage
 Open the project file demo_codes\Arduino\VL53L0X_single_example\VL53L0X_single_example.ino with the Arduino IDE, import API.zip from the Arduino directory into Arduino:<br>
@@ -116,7 +116,7 @@ Open the serial port monitor and the display is as follows. Set the baud rate to
 |SDA	|I2C data line	|PB11|
 |SCL	|I2C clock line	|PB10|
 |SHT	|shutdown control, can connects to IO pin	|NC|
-|GP1	|Interrupt output, can connects to IO pin	|NC|
+|GP1	|Interrupt output, can connects to IO pin	|NC|<br>
 Table2-3 Definition of SG-S53-L0X and STM32 <br>
 ### 2.3.2 Demo codes usage
 Use Keil uVision5 software to open the VL53L0X.uvprojx project file in the directory demo_codes\STM32\USER, and connect the module with STM32 according to the above table; download the program to the STM32 development board after compiling without errors;<br>
