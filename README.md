@@ -1,4 +1,4 @@
-SG-S53-L0X from seengreat:www.seengreat.com
+SG-S53-L0X(VL53L0X) from seengreat:www.seengreat.com
  =======================================
 # Instructions
 ## 1.1、Overview
@@ -19,8 +19,8 @@ This product uses I2C interface to achieve distance measurement, with a measurem
 ## 2.1 Raspberry Pi demo codes usage
 ### 2.1.1 Hardware interface configuration description
 The module with Raspberry Pi motherboard wiring is defined in the following table:<br>
-|-----------|-----------|-------------|
 |PIN	|Describe	|Raspberry Pi|
+|-----------|-----------|-------------|
 |VCC	|Power supply |positive(3.3V/5V)	|3.3V|
 |GND	|Power supply ground	|GND|
 |SDA	|I2C data line	|SDA1|
@@ -63,7 +63,7 @@ Installed /usr/local/lib/python3.7/dist-packages/wiringpi-2.60.0-py3.7-linux-arm
 Processing dependencies for wiringpi==2.60.0Finished processing dependencies for wiringpi==2.60.0<br>
 ### 2.1.3、Install Python library
 #python3<br>
-The demo codes uses the python 3 environment. To run the python demo codes , you need to install smbus:
+The demo codes uses the python 3 environment. To run the python demo codes , you need to install smbus:<br>
 sudo apt-get install -y python-smbus<br>
 ### 2.1.4、Configure the I2C interface
 sudo raspi-config<br>
@@ -89,11 +89,11 @@ Enter the Raspberry Pi/Python directory<br>
 sudo make<br>
 Wait for the program compilation to complete, enter the example directory, and run the demo codes:<br>
 sudo python VL53L0X_singleexample.py   <br>
-The routine phenomenon in the Python version is similar to that in the C language version, and the running results are shown in the following figure(Unit:mm)<br>
+The demo codes phenomenon in the Python version is similar to that in the C language version<br>
 ## 2.2 Arduino Demo Codes Usage
 ### 2.2.1 Wiring instructions
-|-----------|-----------|--------|
 |PIN	|Describe	|Arduino|
+|-----------|-----------|--------|
 |VCC	|Power supply positive(3.3V/5V)	|5V|
 |GND	|Power supply ground	|GND|
 |SDA	|I2C data line	|SDA|
@@ -117,7 +117,7 @@ Open the serial port monitor and the display is as follows. Set the baud rate to
 |SCL	|I2C clock line	|PB10|
 |SHT	|shutdown control, can connects to IO pin	|NC|
 |GP1	|Interrupt output, can connects to IO pin	|NC|
-Table2-3 Definition of SG-S53-L0X and STM32 
+Table2-3 Definition of SG-S53-L0X and STM32 <br>
 ### 2.3.2 Demo codes usage
 Use Keil uVision5 software to open the VL53L0X.uvprojx project file in the directory demo_codes\STM32\USER, and connect the module with STM32 according to the above table; download the program to the STM32 development board after compiling without errors;<br>
 The debugging information output serial port in the demo codes is USART1, where PA9 is Tx and PA10 is Rx; After connecting the cable, open the Serial Port Debugging Assistant, select the serial port number, adjust the baud rate to 115200, click "Open"<br>
